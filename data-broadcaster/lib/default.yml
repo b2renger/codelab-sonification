@@ -1,0 +1,13 @@
+default: &DEFAULT
+  twitter-consumer-key: '5YDZ67m3M8WY4fiGoPIsPvOas'
+  twitter-consumer-secret: 'V2QOXwVMD7SUT0RqKqAKCh9EwkSfEpxIkBu0RoXNXY2OYxsjrl'
+  server-port: 1234 # local server port
+  server-whitelist: [] # IP restrictions, ex ['127.0.0.1']
+  app-query: 'from:codelab_fr'
+  app-query-lang: '' # you can set 'fr' for french, 'en' for english ... or '' for all languages
+  app-polling: 2 # ths is the polling period, a value of 2 means 1 twitter request every 2 seconds, try to not have a too small value to not exceed API limit wich is 2. In mock mode, this value is used to replay local data set.
+  app-mock-mode: false # enable/disable mock mode, in mock mode, no request will be sent to twitter, local data source will be used instead
+  app-capture-mode: true # enable / disable capture mode. doesn't have effect in mock mode.
+  app-dataset-limit: 1000 # max number of tweet to brodcast to client at init time
+  avatar-decoration: false # add decoration on avatar images (white circle)
+  app-codepoints: [32, 10, 8800, 8260, 8804, 8805, 34, 35, 33, 38, 39, 36, 37, 42, 43, 8776, 40, 41, 46, 47, 44, 45, 51, 50, 49, 48, 55, 54, 53, 52, 59, 58, 57, 56, 63, 62, 61, 60, 68, 69, 70, 71, 64, 65, 66, 67, 76, 77, 78, 79, 72, 73, 74, 8747, 75, 8211, 85, 84, 87, 86, 81, 80, 83, 8212, 82, 93, 8218, 92, 8217, 95, 8216, 94, 89, 8222, 88, 8221, 91, 8220, 90, 8710, 8224, 102, 8225, 103, 8226, 100, 101, 8706, 98, 99, 8230, 96, 97, 110, 8719, 111, 108, 109, 106, 107, 104, 105, 119, 8240, 118, 117, 116, 115, 114, 8721, 113, 112, 8249, 8734, 126, 125, 8250, 124, 123, 8730, 122, 121, 120, 137, 136, 139, 138, 141, 140, 143, 142, 129, 128, 131, 130, 133, 132, 63743, 135, 134, 152, 153, 154, 155, 156, 157, 158, 159, 144, 145, 146, 147, 148, 149, 150, 151, 171, 170, 169, 168, 175, 174, 173, 172, 163, 162, 161, 160, 167, 166, 165, 164, 186, 187, 184, 191, 176, 177, 182, 183, 180, 181, 205, 204, 207, 206, 201, 200, 203, 202, 197, 196, 199, 198, 193, 192, 195, 194, 220, 221, 223, 216, 217, 218, 219, 212, 213, 214, 215, 209, 210, 211, 239, 238, 237, 236, 235, 8364, 234, 233, 232, 231, 230, 229, 228, 227, 226, 711, 225, 710, 224, 728, 729, 255, 730, 252, 731, 253, 732, 250, 733, 251, 248, 249, 246, 247, 244, 245, 242, 243, 241, 273, 272, 283, 282, 281, 280, 258, 259, 262, 263, 260, 261, 270, 271, 268, 269, 305, 313, 314, 317, 318, 341, 340, 339, 338, 337, 336, 64257, 351, 350, 64258, 347, 346, 345, 344, 327, 324, 322, 323, 321, 328, 369, 368, 381, 380, 382, 377, 376, 379, 378, 8482, 356, 357, 352, 353, 354, 355, 366, 367, 402, 937, 9674, 960] # unicode white list

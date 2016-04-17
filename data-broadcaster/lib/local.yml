@@ -1,0 +1,23 @@
+default: &DEFAULT
+  twitter-consumer-key: 'put-yout-key-here'
+  twitter-consumer-secret: 'put-yout-secret-here'
+
+mock: &MOCK
+  <<: *DEFAULT
+  app-mock-mode: true
+  app-hashtag: null
+  app-polling: 20
+  server-port: 1234
+  app-dataset-limit: 5000 # max number of tweet to brodcast to client at init time
+
+test: &TEST
+  <<: *DEFAULT
+  app-mock-mode: true
+  app-hashtag: 'WTF'
+  app-dataset-limit: 5000
+  app-polling: 20
+  server-port: 1234
+
+prod: &PROD
+  <<: *DEFAULT
+  app-dataset-limit: 2000

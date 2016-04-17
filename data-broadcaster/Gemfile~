@@ -1,0 +1,6 @@
+source 'https://rubygems.org'
+gem 'twitter'
+gem 'sinatra'
+gem 'sinatra-websocket'
+gem 'json',  '>=1.8.3'
+gem 'rmagick', '~> 2.13.4'
