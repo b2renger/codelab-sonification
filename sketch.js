@@ -35,6 +35,7 @@ function preload() {
 
 function setup() {
   createCanvas(windowWidth,windowHeight);
+	pixelDensity(1);
   width = windowWidth;
   height = windowHeight;
   dc = new DateCounter(2015,02,28,0);
